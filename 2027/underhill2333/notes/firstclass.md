@@ -15,12 +15,12 @@
   命令（ls） 选项（-la）参数（～/projects）
 
 - *基本的语法有*
-  进入指定目录 cd 目录名/
+  进入指定目录     cd 目录名/
   显示当前工作目录 pwd
-  列出目录内容 ls
-  创建目录 mkdir 目录名/
-  新建文件 touch 文件名/
-  删除或重命名 mv 原文件 名字或目标目录
+  列出目录内容     ls
+  创建目录         mkdir 目录名/
+  新建文件         touch 文件名
+  移动或重命名     mv 原文件 名字或目标目录
   删除文件（直接删除，不进回收站） rm 文件名
   
 - *常见组合*
@@ -34,12 +34,13 @@
   条件连接 `mkdir -p demo && cd demo` //类似if else
   
   //不记得指令的可以输入`ls --help`来查阅指令
-    tab可快速补全命令
+  `tab`可快速补全命令
+  `Ctrl-C`中断当前命令
+  `Ctrl-L`清屏
 
-## Vim编辑器
 - 使用指令 vim 文件名/ 打开文件并进入普通模式
   普通模式，可以移动删除和复制
-  在普通模式通过hjkl来控制左上下右
+  在普通模式通过hjkl来控制左下上右
   dd 删除当前行 
   u 撤销
   /word 搜索word 
@@ -64,7 +65,9 @@
   git status #查看当前分支和文件的状态
   git diff #查看当前分支和文件状态
   git log --oneline #查看提交历史
-  git add text.txt 暂存本地文件
+  git add text.txt #暂存本地文件
+  git branch #查看本地分支
+  git switch -c feature/notes# 新建并切换到新分支
   git commit -m "Add greeting" #记录一次本地提交
   git push -u origin 用户名/仓库名 #推送并建立跟踪关系  
   git switch main #切换为主分支
