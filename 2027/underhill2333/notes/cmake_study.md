@@ -103,7 +103,13 @@ AI总结：只有第三个才叫「打开」。source 是准备工作，catkin_m
 
 >这里AI老师是先从ROS的基本运行架构来给我讲解，让我初步明白ros在干什么后再让我去学CMakeLists.txt,这样子就不会学的一脸懵逼了，然后AI老师让我自己写个包后就大概明白了ros在干嘛，catkin在干嘛，包又是什么
 
+- catkin = CMake + ROS拓展(看完后的总结)
 
+- 和CMake差不多，一个经典的工作空间如下
+ src/源码空间
+ build/构建空间
+ devel/开发调试空间
+ install/安装空间
 
 ## 程序的编译流程(知乎专栏)
 
